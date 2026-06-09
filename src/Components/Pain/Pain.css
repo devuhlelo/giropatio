@@ -1,0 +1,117 @@
+.pain {
+  padding: 140px 20px;
+  background: #0f1115;
+}
+
+/* CONTAINER */
+.pain-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* HEADLINE FORTE */
+.pain h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+}
+
+.pain h2 span {
+  color: #ff6b00;
+}
+
+/* SUB */
+.pain-subtitle {
+  margin-top: 14px;
+  font-size: 18px;
+  color: #a1a1aa;
+}
+
+/* GRID */
+.pain-grid {
+  margin-top: 70px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* CARD BASE */
+.pain-card {
+  padding: 28px;
+  border-radius: 18px;
+  text-align: left;
+
+  background: #151821;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+/* CARD DESTACADO */
+.pain-card.featured {
+  transform: scale(1.06);
+  border: 1px solid rgba(255, 107, 0, 0.5);
+  background: linear-gradient(180deg, #1a1f2a, #151821);
+}
+
+/* HOVER */
+.pain-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ÍCONE */
+.icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(255, 107, 0, 0.1);
+  color: #ff6b00;
+
+  margin-bottom: 16px;
+}
+
+/* TÍTULO */
+.pain-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* TEXTO */
+.pain-card p {
+  font-size: 15px;
+  color: #a1a1aa;
+}
+
+/* IMPACTO (ESSENCIAL PRA CONVERSÃO) */
+.pain-impact {
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #ff6b00;
+  font-weight: 600;
+}
+
+/* MAIS FORTE */
+.pain-impact.strong {
+  color: #ff3b30;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .pain h2 {
+    font-size: 30px;
+  }
+
+  .pain-card.featured {
+    transform: scale(1);
+  }
+}

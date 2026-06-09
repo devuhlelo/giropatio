@@ -1,0 +1,91 @@
+.impact {
+  padding: 20px 20px;
+  background: #0c0e12;
+}
+
+/* CONTAINER */
+.impact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TÍTULO */
+.impact h2 {
+  font-size: 44px;
+  color: white;
+  line-height: 1.2;
+}
+
+.impact h2 span {
+  color: #ff6b00;
+}
+
+/* SUB */
+.impact-sub {
+  margin-top: 12px;
+  color: #a1a1aa;
+}
+
+/* BOX */
+.impact-box {
+  margin-top: 50px;
+
+  background: #151821;
+  border-radius: 18px;
+  padding: 32px;
+
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ROW */
+.impact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.impact-row:last-child {
+  border-bottom: none;
+}
+
+/* LEFT SIDE */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #d4d4d8;
+  font-size: 15px;
+}
+
+/* ICON STYLE */
+.left svg {
+  color: #ff6b00;
+  opacity: 0.9;
+}
+
+/* TOTAL */
+.impact-row.total {
+  margin-top: 10px;
+}
+
+.impact-row.total strong {
+  color: #ff6b00;
+  font-size: 28px;
+}
+
+/* MUTED */
+.muted {
+  color: #6b7280;
+}
+
+/* WARNING */
+.impact-warning {
+  margin-top: 20px;
+  color: #ff3b30;
+  font-size: 14px;
+}

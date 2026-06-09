@@ -1,0 +1,111 @@
+.features {
+  padding: 120px 20px;
+  background: #0f1115;
+}
+
+/* CONTAINER */
+.features-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* HEADLINE */
+.features h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+  line-height: 1.2;
+}
+
+.features h2 span {
+  color: #ff6b00;
+}
+
+/* SUBTÍTULO */
+.features-subtitle {
+  margin-top: 12px;
+  font-size: 17px;
+  color: #a1a1aa;
+}
+
+/* GRID */
+.features-grid {
+  margin-top: 60px;
+
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* CARD */
+.features-card {
+  text-align: left;
+  padding: 28px;
+  border-radius: 16px;
+
+  background: #151821;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  transition: all 0.25s ease;
+}
+
+/* CARD DESTAQUE (MEIO) */
+.features-card.featured {
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  transform: scale(1.03);
+}
+
+/* HOVER */
+.features-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 107, 0, 0.3);
+}
+
+/* ÍCONE */
+.features-card .icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(255, 107, 0, 0.08);
+  color: #ff6b00;
+
+  margin-bottom: 16px;
+}
+
+/* TÍTULO */
+.features-card h3 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.features-card p {
+  font-size: 15px;
+  color: #a1a1aa;
+  line-height: 1.5;
+}
+
+/* HIGHLIGHT FINAL */
+.feature-highlight {
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #25d366;
+  font-weight: 600;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .features h2 {
+    font-size: 28px;
+  }
+}

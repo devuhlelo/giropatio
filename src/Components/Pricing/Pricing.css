@@ -1,0 +1,169 @@
+.pricing {
+  padding: 120px 20px;
+  background: #0f1115;
+}
+
+/* CONTAINER */
+.pricing-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TÍTULO */
+.pricing h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+}
+
+.pricing h2 span {
+  color: #ff6b00;
+}
+
+/* SUB */
+.pricing-subtitle {
+  margin-top: 10px;
+  color: #a1a1aa;
+  font-size: 16px;
+}
+
+/* GRID */
+.pricing-grid {
+  margin-top: 60px;
+
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* CARD BASE */
+.pricing-card {
+  padding: 32px;
+  border-radius: 16px;
+
+  background: #151821;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  text-align: left;
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+.pricing-card:hover {
+  transform: translateY(-6px);
+}
+
+/* NOME */
+.pricing-card h3 {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* PREÇO */
+.price {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: white;
+}
+
+.price span {
+  font-size: 18px;
+  color: #a1a1aa;
+}
+
+.price small {
+  font-size: 14px;
+  color: #777;
+  margin-left: 4px;
+}
+
+/* DESC */
+.desc {
+  font-size: 14px;
+  color: #a1a1aa;
+  margin-bottom: 20px;
+}
+
+/* LISTA */
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.pricing-card li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #d4d4d8;
+}
+
+/* BOTÃO */
+.pricing-card button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+
+  background: #262b36;
+  color: white;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.pricing-card button:hover {
+  background: #2f3545;
+}
+
+/* PLANO DESTACADO */
+.pricing-card.featured {
+  border: 1px solid rgba(255, 107, 0, 0.4);
+  transform: scale(1.05);
+  background: linear-gradient(180deg, #1a1f2a, #151821);
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+
+  background: #ff6b00;
+  color: white;
+
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* TEXTO DESTACADO */
+.highlight-text {
+  color: #25d366;
+  font-weight: 600;
+}
+
+/* BOTÃO PRINCIPAL */
+.pricing-card .primary {
+  background: #25d366;
+  color: white;
+}
+
+.pricing-card .primary:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .pricing-card.featured {
+    transform: scale(1);
+  }
+
+  .pricing h2 {
+    font-size: 28px;
+  }
+}
