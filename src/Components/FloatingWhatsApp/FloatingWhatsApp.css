@@ -1,0 +1,118 @@
+/* Container do botão fixo */
+.floating-wa-wrapper {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Oculto: some completamente no Hero e perde interações */
+.floating-wa-wrapper.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px) scale(0.85);
+  pointer-events: none;
+}
+
+/* Visível: surge com transição fluida ao sair do Hero */
+.floating-wa-wrapper.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* Estilização do Botão */
+.floating-wa-btn {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #25D366 0%, #1da851 100%);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Ícone Interno */
+.floating-wa-btn svg {
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+/* ── TOOLTIP (MENSAGEM AO HOVER) ── */
+.wa-tooltip {
+  position: absolute;
+  right: 76px; /* Posicionado à esquerda do botão */
+  background: #11131c;
+  color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  
+  /* Estados iniciais da animação */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(15px) scale(0.95);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+/* Seta discreta do tooltip */
+.wa-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: #11131c;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── INTERAÇÕES NO HOVER ── */
+.floating-wa-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(37, 211, 102, 0.45);
+}
+
+.floating-wa-btn:hover .wa-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0) scale(1);
+}
+
+.floating-wa-btn:hover svg {
+  transform: scale(1.08) rotate(5deg);
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  .floating-wa-wrapper {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .floating-wa-btn {
+    width: 54px;
+    height: 54px;
+  }
+  
+  /* Desativa o tooltip em telas de toque (onde não há hover ativo) */
+  .wa-tooltip {
+    display: none !important;
+  }
+}

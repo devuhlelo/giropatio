@@ -3,6 +3,14 @@ import { Check, Zap, Rocket, Shield, Flame, Percent } from "lucide-react";
 import "./Pricing.css";
 
 export default function Pricing() {
+  const WHATSAPP_NUMBER = "5531987891486";
+
+  // Função auxiliar para gerar os links personalizados do WhatsApp de forma limpa
+  const generateWhatsAppLink = (planName, price) => {
+    const baseText = `Olá! Gostaria de contratar o plano *${planName}* (R$ ${price}/mês) do GiroPátio. Como posso começar?`;
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(baseText)}`;
+  };
+
   return (
     <section className="pricing-section" id="pricing">
       {/* Luzes Estéticas de Fundo */}
@@ -51,7 +59,16 @@ export default function Pricing() {
                 <li><Check size={16} className="cyber-check" /> <span>Suporte em dias úteis</span></li>
               </ul>
               
-              <button className="cyber-btn-outline">Contratar Starter</button>
+              {/* Link personalizado para o Plano 1 */}
+              <a 
+                href={generateWhatsAppLink("Motor de Partida", "197")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cyber-btn-outline"
+                style={{ textDecoration: 'none', display: 'block', textAlign: 'center' }}
+              >
+                Contratar Starter
+              </a>
             </div>
           </div>
 
@@ -86,7 +103,16 @@ export default function Pricing() {
                 <li><Check size={16} className="cyber-check orange" /> <span>Suporte Prioritário</span></li>
               </ul>
               
-              <button className="cyber-btn-action-green">Acelerar Meu Pátio</button>
+              {/* Link personalizado para o Plano 2 */}
+              <a 
+                href={generateWhatsAppLink("Alta Rotação", "347")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cyber-btn-action-green"
+                style={{ textDecoration: 'none', display: 'block', textAlign: 'center' }}
+              >
+                Acelerar Meu Pátio
+              </a>
             </div>
           </div>
 
@@ -115,7 +141,16 @@ export default function Pricing() {
                 <li><Check size={16} className="cyber-check" /> <span>Gerente de conta exclusivo</span></li>
               </ul>
               
-              <button className="cyber-btn-outline">Escalar Escopo</button>
+              {/* Link personalizado para o Plano 3 */}
+              <a 
+                href={generateWhatsAppLink("Máquina de Vendas", "597")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cyber-btn-outline"
+                style={{ textDecoration: 'none', display: 'block', textAlign: 'center' }}
+              >
+                Escalar Escopo
+              </a>
             </div>
           </div>
 

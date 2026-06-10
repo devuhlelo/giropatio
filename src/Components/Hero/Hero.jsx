@@ -1,5 +1,5 @@
 import "./Hero.css";
-import { MessageCircle, ArrowRight, CheckCircle, Bot } from "lucide-react";
+import { MessageCircle, ArrowRight, CheckCircle, Bot, Zap } from "lucide-react";
 
 export default function Hero() {
   // Link direto do WhatsApp com mensagem pronta
@@ -11,46 +11,55 @@ export default function Hero() {
       <div className="hero-glow-green" />
 
       <div className="hero-container">
-
         {/* TEXTO */}
         <div className="hero-left">
-
-          <div className="hero-badge">
-            <span className="hero-badge-dot" />
-            Mais de 120 agências ativas
-          </div>
+         
 
           <h1>
-            Pare de perder tempo com curiosos. Gire seu estoque mais<br />
-            <span className="accent"> rápido</span>
+            Transforme cliques em <br />
+            <span className="accent text-gradient-orange">vendas de veículos reais.</span>
           </h1>
 
           <p>
-            O GiroPátio é a plataforma com IA que atende em 3 segundos, qualifica quem tem potencial 24h por dia e entrega o lead quente pro seu vendedor.
+            Chega de curiosos sugando seu tempo. A IA do GiroPátio atende 24h, 
+            qualifica o lead no WhatsApp e entrega o cliente pronto para fechar negócio.
           </p>
 
-          <div className="hero-cta">
-            {/* BOTÃO ATUALIZADO PARA O WHATSAPP */}
-            <a 
-              href={whatsappLink} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn-main"
-              style={{ textDecoration: 'none' }}
-            >
-              <MessageCircle size={18} />
-              Quero Vender Mais Rápido
-              <span className="btn-arrow">
-                <ArrowRight size={12} />
-              </span>
-            </a>
+          <div className="hero-cta-wrapper">
+            <div className="hero-cta">
+              <a 
+                href={whatsappLink} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-main pulse-btn"
+                style={{ textDecoration: 'none' }}
+              >
+                <MessageCircle size={20} />
+                Quero Leads Quentes Agora
+                <span className="btn-arrow">
+                  <ArrowRight size={14} />
+                </span>
+              </a>
+            </div>
+
+            {/* PROVA SOCIAL INSERIDA */}
+            <div className="hero-proof">
+             
+              <div className="proof-text">
+                Junte-se a <strong>+120 lojistas</strong> faturando mais.
+              </div>
+            </div>
           </div>
 
+          <div className="hero-microcopy">
+            <Zap size={14} color="#ff8a33" style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+            Sem espera. Instalação em minutos.
+          </div>
         </div>
 
-        {/* MOCKUP DO WHATSAPP (MANTIDO) */}
+        {/* MOCKUP DO WHATSAPP */}
         <div className="hero-right">
-          <div className="phone-frame">
+          <div className="phone-frame floating-phone">
             <div className="phone-header">
               <div className="phone-avatar">
                 <Bot size={18} color="#0a0c10" />
@@ -100,10 +109,8 @@ export default function Hero() {
                 <div className="stat-label">atendimento ativo</div>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );

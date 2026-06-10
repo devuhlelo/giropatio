@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-credits">
-            Desenvolvido por <a href="https://uhlelo.com.br/" target="_blank" rel="noopener noreferrer">Uhlelo</a>
+            Desenvolvido por <a href="https://uhlelo.com.br/" target="_blank" rel="noopener noreferrer">uHLelo</a>
           </div>
           
         </div>

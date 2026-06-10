@@ -68,7 +68,7 @@ export default function Navbar() {
             className="btn-primary nav-cta"
             style={{ textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}
           >
-            Começar Grátis
+            Conhecer mais
           </a>
         </div>
 
