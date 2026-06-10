@@ -81,24 +81,40 @@
 }
 
 /* BOTÃO CTA (VERDE WHATSAPP) */
+/* BOTÃO CTA (VERDE WHATSAPP) */
 .nav-cta {
   margin-left: 10px;
   padding: 12px 24px;
   background: #25d366;
   border: 1px solid transparent;
   border-radius: 8px;
-  color: #121212; /* Texto escuro para contraste no botão verde */
+  
+  /* FORÇANDO A COR DO TEXTO COMO BRANCO E SEM HERANÇA */
+  color: #ffffff !important; 
   font-weight: 700;
   font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 0 15px rgba(37, 211, 102, 0.2);
+  
+  /* Garante que o texto não mude de cor no hover */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
 }
 
 .nav-cta:hover {
   transform: translateY(-2px);
   background: #20ba59;
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  /* Mantém branco no hover */
+  color: #ffffff !important; 
+}
+
+/* Garante que, mesmo que seja um link, ele ignore cores de visitado */
+.nav-cta:visited {
+  color: #ffffff !important;
 }
 
 /* HAMBURGER ANIMADO */
