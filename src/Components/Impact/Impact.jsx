@@ -3,7 +3,7 @@ import { Car, Clock, DollarSign } from "lucide-react";
 
 export default function Impact() {
   return (
-    <section className="impact">
+    <section className="impact" id="impact">
 
       <div className="impact-container">
 

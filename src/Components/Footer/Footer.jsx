@@ -10,17 +10,17 @@ export default function Footer() {
         {/* CTA */}
         <div className="footer-cta">
           <h2>
-            Seu pátio não pode esperar.
-            <span> Comece a vender hoje.</span>
+            Cada dia que um carro passa no pátio, seu lucro diminui.<br />
+            <span>Não deixe dinheiro parado.</span>
           </h2>
 
           <p>
-            Enquanto você pensa, seu concorrente já está fechando o cliente.
+            Transforme seu atendimento hoje e veja o giro acontecer.
           </p>
 
           <button className="footer-btn">
             <MessageCircle size={18} />
-            Falar com consultor
+            Falar com um Consultor Agora
             <ArrowRight size={16} />
           </button>
         </div>

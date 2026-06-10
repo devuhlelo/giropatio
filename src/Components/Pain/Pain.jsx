@@ -3,16 +3,15 @@ import { MessageCircle, Clock, Car } from "lucide-react";
 
 export default function Pain() {
   return (
-    <section className="pain">
+    <section className="pain" id="pain">
       <div className="pain-container">
 
         <h2>
-          Todo dia que um carro fica parado,
-          <span> você está perdendo dinheiro.</span>
+          O que acontece quando <span>você não usa o GiroPátio?</span>
         </h2>
 
         <p className="pain-subtitle">
-          E o pior: você nem percebe quanto está deixando na mesa.
+          Seu pátio continua lotado e você perde vendas por demora no atendimento.
         </p>
 
         <div className="pain-grid">
@@ -23,11 +22,10 @@ export default function Pain() {
               <MessageCircle size={26} />
             </div>
 
-            <h3>Você responde… e não vende</h3>
+            <h3>O Vendedor Exausto</h3>
 
             <p>
-              80% das conversas no WhatsApp são perda de tempo.
-              Seu vendedor vira atendente de curioso.
+              Sua equipe perde horas no WhatsApp respondendo "Qual o valor?" ou "Aceita troca?" para curiosos que somem no minuto seguinte.
             </p>
 
             <span className="pain-impact">
@@ -41,11 +39,10 @@ export default function Pain() {
               <Clock size={26} />
             </div>
 
-            <h3>Seu cliente compra do concorrente</h3>
+            <h3>O Cliente no Vácuo</h3>
 
             <p>
-              Ele chama, espera… e vai embora.
-              Quem responde primeiro, vende.
+              Aquele lead quente chega de madrugada com dinheiro na mão, mas esfria e vai para o concorrente porque ninguém da agência respondeu na hora.
             </p>
 
             <span className="pain-impact strong">
@@ -59,11 +56,10 @@ export default function Pain() {
               <Car size={26} />
             </div>
 
-            <h3>Seu estoque está parado</h3>
+            <h3>O Dinheiro Parado</h3>
 
             <p>
-              Cada dia no pátio é dinheiro evaporando.
-              E ninguém está acelerando a saída.
+              Carros perdendo valor de tabela a cada mês no pátio, enquanto você luta para gerenciar negociações espalhadas no papel.
             </p>
 
             <span className="pain-impact">

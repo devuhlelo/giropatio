@@ -1,19 +1,18 @@
 import "./Features.css";
-import { MessageCircle, Car, BarChart3 } from "lucide-react";
+import { MessageCircle, MonitorSmartphone, KanbanSquare } from "lucide-react";
 
 export default function Features() {
   return (
-    <section className="features">
+    <section className="features" id="features">
       <div className="features-container">
 
         <h2>
-          Você não precisa trabalhar mais.
-          <br />
-          <span>Precisa de um sistema que venda por você.</span>
+          Uma máquina de vendas no automático.<br />
+          <span>Como resolvemos o seu problema:</span>
         </h2>
 
         <p className="features-subtitle">
-          O GiroPátio elimina o tempo perdido e transforma atendimento em vendas reais.
+          Nossa IA trabalha 24/7 para que seu vendedor foque apenas em fechar negócios.
         </p>
 
         <div className="features-grid">
@@ -24,51 +23,48 @@ export default function Features() {
               <MessageCircle size={26} />
             </div>
 
-            <h3>Atenda em 3 segundos — 24h por dia</h3>
+            <h3>Qualificação Automática (As 3 Gavetas)</h3>
 
             <p>
-              Enquanto você dorme, a IA responde seus clientes, mantém o interesse vivo
-              e impede que o lead vá embora para o concorrente.
+              A IA atende na hora e descobre: Tem carro na troca? Forma de pagamento? Valor de entrada? O lead só chega ao vendedor quando estiver pronto.
             </p>
 
             <span className="feature-highlight">
-              Nunca mais perca cliente por demora
+              Atendimento em 3 segundos, 24h por dia
             </span>
           </div>
 
           {/* FEATURE 2 */}
           <div className="features-card featured">
             <div className="icon">
-              <Car size={26} />
+              <MonitorSmartphone size={26} />
             </div>
 
-            <h3>Pare de perder tempo com curioso</h3>
+            <h3>Vitrine Digital Premium</h3>
 
             <p>
-              A IA só entrega o cliente quando ele já informou entrada, forma de pagamento
-              e interesse real no veículo.
+              Um catálogo web moderno para a sua agência, com fotos que convertem e precificação integrada automaticamente com a tabela FIPE.
             </p>
 
             <span className="feature-highlight">
-              Seu vendedor fala só com quem vai comprar
+              Seu estoque online de forma profissional
             </span>
           </div>
 
           {/* FEATURE 3 */}
           <div className="features-card">
             <div className="icon">
-              <BarChart3 size={26} />
+              <KanbanSquare size={26} />
             </div>
 
-            <h3>Transforme seu pátio em dinheiro</h3>
+            <h3>Pipeline Kanban Intuitivo</h3>
 
             <p>
-              Organize seu estoque, publique automaticamente e acelere a saída dos carros
-              que estão parados.
+              Chega de perder o fio da meada. Acompanhe cada negociação em um funil visual de vendas focado 100% em conversão e fechamento rápido.
             </p>
 
             <span className="feature-highlight">
-              Menos estoque parado, mais caixa girando
+              Controle total sobre cada negociação
             </span>
           </div>
 

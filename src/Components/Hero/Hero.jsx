@@ -2,6 +2,9 @@ import "./Hero.css";
 import { MessageCircle, ArrowRight, CheckCircle, Bot } from "lucide-react";
 
 export default function Hero() {
+  // Link direto do WhatsApp com mensagem pronta
+  const whatsappLink = "https://wa.me/5531987891486?text=Ol%C3%A1%2C%20quero%20vender%20mais%20r%C3%A1pido%20com%20o%20GiroP%C3%A1tio!";
+
   return (
     <section className="hero">
       <div className="hero-glow-orange" />
@@ -18,53 +21,54 @@ export default function Hero() {
           </div>
 
           <h1>
-            Sua agência vende<br />
-            <span className="accent">24h por dia</span>
-            <span className="soft"> —</span><br />
-            <span className="soft">sem ninguém online</span>
+            Pare de perder tempo com curiosos. Gire seu estoque mais<br />
+            <span className="accent"> rápido</span>
           </h1>
 
           <p>
-            Atendimento automático que filtra curiosos e entrega só cliente
-            pronto para fechar negócio. Direto no WhatsApp.
+            O GiroPátio é a plataforma com IA que atende em 3 segundos, qualifica quem tem potencial 24h por dia e entrega o lead quente pro seu vendedor.
           </p>
 
           <div className="hero-cta">
-            <button className="btn-main">
+            {/* BOTÃO ATUALIZADO PARA O WHATSAPP */}
+            <a 
+              href={whatsappLink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-main"
+              style={{ textDecoration: 'none' }}
+            >
               <MessageCircle size={18} />
-              Falar com consultor
+              Quero Vender Mais Rápido
               <span className="btn-arrow">
                 <ArrowRight size={12} />
               </span>
-            </button>
-
-          
+            </a>
           </div>
 
         </div>
 
-        {/* MOCKUP */}
+        {/* MOCKUP DO WHATSAPP (MANTIDO) */}
         <div className="hero-right">
           <div className="phone-frame">
-
             <div className="phone-header">
               <div className="phone-avatar">
                 <Bot size={18} color="#0a0c10" />
               </div>
               <div className="phone-info">
-                <div className="phone-name">Assistente Virtual</div>
+                <div className="phone-name">Assistente GiroPátio</div>
                 <div className="phone-status">● Online agora</div>
               </div>
             </div>
 
             <div className="phone-body">
               <div className="msg msg-user">
-                Tem esse carro ainda?
+                Tem esse carro ainda? Qual o valor?
                 <div className="msg-time">18:32</div>
               </div>
 
               <div className="msg msg-bot">
-                Sim! Vai financiar ou dar entrada?<br />
+                Temos sim! Excelente escolha. Vai financiar ou dar entrada?<br />
                 Tenho ótimas condições pra você 🚗
                 <div className="msg-time">18:32</div>
               </div>
@@ -82,7 +86,7 @@ export default function Hero() {
 
               <div className="msg-success">
                 <CheckCircle size={14} />
-                Lead qualificado enviado ao consultor
+                Lead qualificado entregue ao vendedor
               </div>
             </div>
 

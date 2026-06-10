@@ -1,94 +1,125 @@
+import React from "react";
+import { Check, Zap, Rocket, Shield, Flame, Percent } from "lucide-react";
 import "./Pricing.css";
 
 export default function Pricing() {
   return (
-    <section className="pricing">
+    <section className="pricing-section" id="pricing">
+      {/* Luzes Estéticas de Fundo */}
+      <div className="pricing-blur-glow orange-glow"></div>
+      <div className="pricing-blur-glow green-glow"></div>
+
       <div className="pricing-container">
+        <div className="pricing-meta-header">
+          <div className="tech-badge">
+            <Percent size={12} />
+            <span>Retorno de Investimento Garantido</span>
+          </div>
+          <h2 className="pricing-main-title">
+            Planos que se pagam com <br />
+            <span className="text-gradient-orange">apenas 1 venda no mês</span>
+          </h2>
+          <p className="pricing-main-subtitle">
+            Escolha a velocidade de giro da sua agência. Sem contratos de fidelidade abusivos.
+          </p>
+        </div>
 
-        <h2>
-          Escolha o plano que vai
-          <span> acelerar suas vendas</span>
-        </h2>
-
-        <p className="pricing-subtitle">
-          Você não precisa de mais leads. Precisa fechar mais rápido.
-        </p>
-
-        <div className="pricing-grid">
-
+        <div className="pricing-cards-matrix">
+          
           {/* PLANO 1 */}
-          <div className="pricing-card">
-            <h3>Motor de Partida</h3>
-
-            <div className="price">
-              <span>R$</span>197
-              <small>/mês</small>
+          <div className="pricing-cyber-card">
+            <div className="cyber-card-inner">
+              <div className="plan-icon-box">
+                <Rocket size={20} className="icon-orange" />
+              </div>
+              <h4 className="cyber-plan-name">Motor de Partida</h4>
+              <div className="cyber-price-wrapper">
+                <span className="cyber-currency">R$</span>
+                <span className="cyber-amount">197</span>
+                <span className="cyber-period">/mês</span>
+              </div>
+              <p className="cyber-plan-summary">
+                Mais barato que um panfleteiro. Ideal para começar a filtrar curiosos do estoque.
+              </p>
+              
+              <div className="cyber-divider"></div>
+              
+              <ul className="cyber-features-list">
+                <li><Check size={16} className="cyber-check" /> <span>Agente de IA no WhatsApp</span></li>
+                <li><Check size={16} className="cyber-cyber-check" /> <span>Vitrine Digital Premium</span></li>
+                <li><Check size={16} className="cyber-check" /> <span>Estoque de até 30 veículos</span></li>
+                <li><Check size={16} className="cyber-check" /> <span>Suporte em dias úteis</span></li>
+              </ul>
+              
+              <button className="cyber-btn-outline">Contratar Starter</button>
             </div>
-
-            <p className="desc">
-              Comece a vender mais sem aumentar sua equipe.
-            </p>
-
-            <ul>
-              <li>✔ Atendimento automático no WhatsApp</li>
-              <li>✔ Vitrine digital</li>
-              <li>✔ Até 30 veículos</li>
-            </ul>
-
-            <button>Começar agora</button>
           </div>
 
-          {/* PLANO 2 DESTACADO */}
-          <div className="pricing-card featured">
-            <div className="badge">MAIS ESCOLHIDO</div>
-
-            <h3>Alta Rotação</h3>
-
-            <div className="price">
-              <span>R$</span>347
-              <small>/mês</small>
+          {/* PLANO 2 - ULTRA DESTACADO */}
+          <div className="pricing-cyber-card prominent">
+            <div className="cyber-premium-border"></div>
+            <div className="cyber-card-inner">
+              <div className="cyber-tag-highlight">
+                <Flame size={12} />
+                <span>O mais vendido</span>
+              </div>
+              <div className="plan-icon-box internal-gradient">
+                <Zap size={20} className="icon-white" />
+              </div>
+              <h4 className="cyber-plan-name">Alta Rotação</h4>
+              <div className="cyber-price-wrapper">
+                <span className="cyber-currency">R$</span>
+                <span className="cyber-amount">347</span>
+                <span className="cyber-period">/mês</span>
+              </div>
+              <p className="cyber-plan-summary yellow-tint">
+                Garante o melhor custo-benefício. Destrava ferramentas completas de gestão.
+              </p>
+              
+              <div className="cyber-divider"></div>
+              
+              <ul className="cyber-features-list">
+                <li><Check size={16} className="cyber-check orange" /> <strong>Estoque 100% Ilimitado</strong></li>
+                <li><Check size={16} className="cyber-check orange" /> <span>Integração Inteligente FIPE</span></li>
+                <li><Check size={16} className="cyber-check orange" /> <span>Pipeline Kanban de Vendas</span></li>
+                <li><Check size={16} className="cyber-check orange" /> <span>Atendimento IA Omnichannel</span></li>
+                <li><Check size={16} className="cyber-check orange" /> <span>Suporte Prioritário</span></li>
+              </ul>
+              
+              <button className="cyber-btn-action-green">Acelerar Meu Pátio</button>
             </div>
-
-            <p className="desc highlight-text">
-              O plano que paga sozinho com 1 venda a mais.
-            </p>
-
-            <ul>
-              <li>✔ Estoque ilimitado</li>
-              <li>✔ Integração FIPE automática</li>
-              <li>✔ Pipeline Kanban completo</li>
-              <li>✔ Prioridade nos atendimentos</li>
-            </ul>
-
-            <button className="primary">
-              Quero vender mais rápido
-            </button>
           </div>
 
           {/* PLANO 3 */}
-          <div className="pricing-card">
-            <h3>Máquina de Vendas</h3>
-
-            <div className="price">
-              <span>R$</span>597
-              <small>/mês</small>
+          <div className="pricing-cyber-card">
+            <div className="cyber-card-inner">
+              <div className="plan-icon-box">
+                <Shield size={20} className="icon-orange" />
+              </div>
+              <h4 className="cyber-plan-name">Máquina de Vendas</h4>
+              <div className="cyber-price-wrapper">
+                <span className="cyber-currency">R$</span>
+                <span className="cyber-amount">597</span>
+                <span className="cyber-period">/mês</span>
+              </div>
+              <p className="cyber-plan-summary">
+                Desenvolvido sob medida para lojas que investem forte em anúncios de tráfego pago.
+              </p>
+              
+              <div className="cyber-divider"></div>
+              
+              <ul className="cyber-features-list">
+                <li><Check size={16} className="cyber-check" /> <span>Tudo do Plano Alta Rotação</span></li>
+                <li><Check size={16} className="cyber-check" /> <strong>IA integrada ao Instagram Direct</strong></li>
+                <li><Check size={16} className="cyber-check" /> <span>Qualificação ativa de leads de anúncios</span></li>
+                <li><Check size={16} className="cyber-check" /> <span>Gerente de conta exclusivo</span></li>
+              </ul>
+              
+              <button className="cyber-btn-outline">Escalar Escopo</button>
             </div>
-
-            <p className="desc">
-              Para quem quer escalar e rodar tráfego.
-            </p>
-
-            <ul>
-              <li>✔ IA no WhatsApp 24h</li>
-              <li>✔ IA no Instagram</li>
-              <li>✔ Ideal para tráfego pago</li>
-            </ul>
-
-            <button>Escalar agora</button>
           </div>
 
         </div>
-
       </div>
     </section>
   );

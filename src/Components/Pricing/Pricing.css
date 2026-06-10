@@ -1,169 +1,300 @@
-.pricing {
-  padding: 120px 20px;
-  background: #0f1115;
-}
-
-/* CONTAINER */
-.pricing-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* TÍTULO */
-.pricing h2 {
-  font-size: 42px;
-  font-weight: 600;
-  color: white;
-}
-
-.pricing h2 span {
-  color: #ff6b00;
-}
-
-/* SUB */
-.pricing-subtitle {
-  margin-top: 10px;
-  color: #a1a1aa;
-  font-size: 16px;
-}
-
-/* GRID */
-.pricing-grid {
-  margin-top: 60px;
-
-  display: grid;
-  gap: 20px;
-
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-/* CARD BASE */
-.pricing-card {
-  padding: 32px;
-  border-radius: 16px;
-
-  background: #151821;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-
-  text-align: left;
-  transition: all 0.25s ease;
-}
-
-/* HOVER */
-.pricing-card:hover {
-  transform: translateY(-6px);
-}
-
-/* NOME */
-.pricing-card h3 {
-  font-size: 18px;
+.pricing-section {
+  background-color: #0b0b10;
+  position: relative;
+  padding: 120px 24px;
+  overflow: hidden;
   color: #ffffff;
+  font-family: 'Inter', sans-serif;
 }
 
-/* PREÇO */
-.price {
-  font-size: 44px;
-  font-weight: 700;
-  margin: 10px 0;
-  color: white;
+/* Esferas de Iluminação Neon de Fundo */
+.pricing-blur-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  -webkit-filter: blur(140px);
+  pointer-events: none;
+  opacity: 0.12;
+  z-index: 1;
 }
 
-.price span {
-  font-size: 18px;
-  color: #a1a1aa;
+.orange-glow {
+  width: 450px;
+  height: 450px;
+  background: #FF6B00;
+  top: -10px;
+  left: -50px;
 }
 
-.price small {
-  font-size: 14px;
-  color: #777;
-  margin-left: 4px;
+.green-glow {
+  width: 500px;
+  height: 500px;
+  background: #25D366;
+  bottom: -100px;
+  right: -50px;
 }
 
-/* DESC */
-.desc {
-  font-size: 14px;
-  color: #a1a1aa;
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-meta-header {
+  text-align: center;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Badge Tecnológico Superior */
+.tech-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 107, 0, 0.08);
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #FF6B00;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   margin-bottom: 20px;
 }
 
-/* LISTA */
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
+.pricing-main-title {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, #FF6B00 0%, #ff944d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pricing-main-subtitle {
+  font-size: 1.15rem;
+  color: #64748b;
+  max-width: 600px;
+}
+
+/* Grid de Cards */
+.pricing-cards-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  align-items: stretch;
+}
+
+/* Card Técnico */
+.pricing-cyber-card {
+  background: rgba(20, 20, 28, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 24px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pricing-cyber-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.cyber-card-inner {
+  padding: 40px 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Prominente (Alta Rotação) */
+.pricing-cyber-card.prominent {
+  background: rgba(24, 24, 37, 0.85);
+  box-shadow: 0 20px 40px rgba(255, 107, 0, 0.04);
+}
+
+.cyber-premium-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  border: 2px solid #FF6B00;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Elementos Internos dos Cards */
+.plan-icon-box {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 107, 0, 0.08);
+  border: 1px solid rgba(255, 107, 0, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 24px;
 }
 
-.pricing-card li {
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #d4d4d8;
-}
-
-/* BOTÃO */
-.pricing-card button {
-  width: 100%;
-  padding: 14px;
-  border-radius: 10px;
+.internal-gradient {
+  background: linear-gradient(135deg, #FF6B00 0%, #ff8533 100%);
   border: none;
-
-  background: #262b36;
-  color: white;
-
-  cursor: pointer;
-  transition: all 0.25s ease;
 }
 
-.pricing-card button:hover {
-  background: #2f3545;
-}
+.icon-orange { color: #FF6B00; }
+.icon-white { color: #ffffff; }
 
-/* PLANO DESTACADO */
-.pricing-card.featured {
-  border: 1px solid rgba(255, 107, 0, 0.4);
-  transform: scale(1.05);
-  background: linear-gradient(180deg, #1a1f2a, #151821);
-}
-
-/* BADGE */
-.badge {
+.cyber-tag-highlight {
   position: absolute;
-  top: -12px;
-  left: 20px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FF6B00;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 4;
+}
 
-  background: #ff6b00;
-  color: white;
+.cyber-plan-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
 
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 12px;
+.cyber-price-wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.cyber-currency {
+  font-size: 1.2rem;
   font-weight: 600;
+  color: #475569;
+  margin-right: 4px;
 }
 
-/* TEXTO DESTACADO */
-.highlight-text {
-  color: #25d366;
+.cyber-amount {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.cyber-period {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-left: 4px;
+}
+
+.cyber-plan-summary {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  min-height: 48px;
+}
+
+.cyber-plan-summary.yellow-tint {
+  color: #ffb380;
+}
+
+.cyber-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+  margin-bottom: 32px;
+}
+
+/* Listagem de Diferenciais */
+.cyber-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.cyber-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.cyber-check {
+  width: 16px;
+  height: 16px;
+  color: #475569;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.cyber-check.orange {
+  color: #FF6B00;
+}
+
+/* Botões */
+.cyber-btn-outline {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-/* BOTÃO PRINCIPAL */
-.pricing-card .primary {
-  background: #25d366;
-  color: white;
+.cyber-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
-.pricing-card .primary:hover {
-  background: #1ebe5d;
-  transform: translateY(-2px);
+.cyber-btn-action-green {
+  width: 100%;
+  background: #25D366;
+  border: none;
+  color: #0b0b10;
+  padding: 18px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.15);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* RESPONSIVO */
-@media (max-width: 900px) {
-  .pricing-card.featured {
-    transform: scale(1);
-  }
+.cyber-btn-action-green:hover {
+  background: #20ba59;
+  transform: scale(1.01);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3);
+}
 
-  .pricing h2 {
-    font-size: 28px;
-  }
+@media (max-width: 768px) {
+  .pricing-main-title { font-size: 2.2rem; }
+  .pricing-section { padding: 80px 16px; }
 }
