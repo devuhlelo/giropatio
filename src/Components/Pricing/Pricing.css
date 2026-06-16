@@ -1,7 +1,7 @@
 .pricing-section {
-  background-color: #0b0b10;
+  background-color: #07080a;
   position: relative;
-  padding: 120px 24px;
+  padding: 90px 24px;
   overflow: hidden;
   color: #ffffff;
   font-family: 'Inter', sans-serif;
@@ -18,21 +18,7 @@
   z-index: 1;
 }
 
-.orange-glow {
-  width: 450px;
-  height: 450px;
-  background: #FF6B00;
-  top: -10px;
-  left: -50px;
-}
 
-.green-glow {
-  width: 500px;
-  height: 500px;
-  background: #25D366;
-  bottom: -100px;
-  right: -50px;
-}
 
 .pricing-container {
   max-width: 1200px;

@@ -11,7 +11,7 @@ export default function Pain() {
         </h2>
 
         <p className="pain-subtitle">
-          Seu pátio continua lotado e você perde vendas por demora no atendimento.
+          Leads chegam todos os dias — mas sem resposta rápida, eles simplesmente somem.
         </p>
 
         <div className="pain-grid">

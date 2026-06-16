@@ -35,7 +35,7 @@ export default function Hero() {
                 style={{ textDecoration: 'none' }}
               >
                 <MessageCircle size={20} />
-                Quero Leads Quentes Agora
+                Peça uma demostração
                 <span className="btn-arrow">
                   <ArrowRight size={14} />
                 </span>

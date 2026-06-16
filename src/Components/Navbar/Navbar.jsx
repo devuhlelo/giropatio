@@ -56,8 +56,8 @@ export default function Navbar() {
         <div className={`nav-links ${open ? 'open' : ''}`}>
           <a href="#pain" onClick={(e) => scrollToSection(e, 'pain')}>Dores</a>
           <a href="#features" onClick={(e) => scrollToSection(e, 'features')}>Funcionalidades</a>
-          <a href="#pricing" onClick={(e) => scrollToSection(e, 'pricing')}>Planos</a>
           <a href="#impact" onClick={(e) => scrollToSection(e, 'impact')}>Impacto</a>
+          <a href="#pricing" onClick={(e) => scrollToSection(e, 'pricing')}>Planos</a>
 
 
           {/* BOTÃO ATUALIZADO PARA O WHATSAPP */}

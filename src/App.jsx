@@ -8,20 +8,24 @@ import Testimonials from "./Components/Testimonials/Testimonials.jsx";
 import Impact from "./Components/Impact/Impact.jsx";
 
 // Importe o novo componente do botão flutuante (Ajuste o caminho da pasta se necessário)
-import FloatingWhatsApp from "./Components/FloatingWhatsApp/FloatingWhatsApp.jsx"; 
+import FloatingWhatsApp from "./Components/FloatingWhatsApp/FloatingWhatsApp.jsx";
+import Parallax from "./Components/Parallax/Parallax.jsx";
+import Counter from "./Components/Counter/Counter.jsx";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
+      <Counter />
       <Pain />
       <Features />
-      <Pricing />
       <Impact />
+      <Pricing />
+      <Parallax />
       <Testimonials />
       <Footer />
-      
+
       {/* Botão flutuante global da Landing Page */}
       <FloatingWhatsApp />
     </>

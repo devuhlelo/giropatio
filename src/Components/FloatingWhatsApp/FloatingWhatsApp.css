@@ -1,118 +1,124 @@
-/* Container do botão fixo */
-.floating-wa-wrapper {
+/* Container Fixado na Tela */
+.floating-social-container {
   position: fixed;
-  bottom: 32px;
-  right: 32px;
+  bottom: 30px;
+  right: 30px;
   z-index: 9999;
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none; /* Evita cliques fantasmas quando oculto */
 }
 
-/* Oculto: some completamente no Hero e perde interações */
-.floating-wa-wrapper.hidden {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(30px) scale(0.85);
-  pointer-events: none;
-}
-
-/* Visível: surge com transição fluida ao sair do Hero */
-.floating-wa-wrapper.visible {
+/* Lógica de exibição disparada pelo Scroll do React */
+.floating-social-container.visible {
   opacity: 1;
-  visibility: visible;
   transform: translateY(0) scale(1);
   pointer-events: auto;
 }
 
-/* Estilização do Botão */
-.floating-wa-btn {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #25D366 0%, #1da851 100%);
-  color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-/* Ícone Interno */
-.floating-wa-btn svg {
-  transition: transform 0.3s ease;
-  z-index: 2;
-}
-
-/* ── TOOLTIP (MENSAGEM AO HOVER) ── */
-.wa-tooltip {
-  position: absolute;
-  right: 76px; /* Posicionado à esquerda do botão */
-  background: #11131c;
-  color: #f8fafc;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  white-space: nowrap;
-  padding: 10px 18px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  
-  /* Estados iniciais da animação */
+.floating-social-container.hidden {
   opacity: 0;
-  visibility: hidden;
-  transform: translateX(15px) scale(0.95);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(40px) scale(0.8);
   pointer-events: none;
 }
 
-/* Seta discreta do tooltip */
-.wa-tooltip::after {
-  content: "";
+/* Lista Vertical */
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espaço entre os dois botões */
+}
+
+.social-list .icon-content {
+  position: relative;
+}
+
+/* links/botoes redondos */
+.social-list .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-list .icon-content a svg {
+  position: relative;
+  z-index: 2;
+  width: 26px;
+  height: 26px;
+}
+
+/* Efeito de preenchimento de baixo para cima */
+.social-list .icon-content a .filled {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-list .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.social-list .icon-content a:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Cores específicas: WhatsApp (Verde Oficial) */
+.social-list .icon-content a[data-social="whatsapp"] .filled {
+  background-color: #25D366;
+}
+
+/* Cores específicas: Instagram (Gradiente Sunset) */
+.social-list .icon-content a[data-social="instagram"] .filled {
+  background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+}
+
+/* Tooltip Inteligente (Aparece para o lado ESQUERDO) */
+.social-list .icon-content .tooltip {
   position: absolute;
   top: 50%;
-  right: -5px;
-  transform: translateY(-50%) rotate(45deg);
-  width: 10px;
-  height: 10px;
-  background: #11131c;
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  right: 125%; /* Move o texto para a esquerda do botão */
+  transform: translateY(-50%) translateX(10px);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-/* ── INTERAÇÕES NO HOVER ── */
-.floating-wa-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 36px rgba(37, 211, 102, 0.45);
-}
-
-.floating-wa-btn:hover .wa-tooltip {
+/* Amarração das cores nos fundos dos Tooltips baseados no hover */
+.social-list .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0) scale(1);
+  transform: translateY(-50%) translateX(0);
 }
 
-.floating-wa-btn:hover svg {
-  transform: scale(1.08) rotate(5deg);
+.social-list .icon-content:has(a[data-social="whatsapp"]):hover .tooltip {
+  background-color: #25D366;
 }
 
-/* Responsividade Mobile */
-@media (max-width: 768px) {
-  .floating-wa-wrapper {
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  .floating-wa-btn {
-    width: 54px;
-    height: 54px;
-  }
-  
-  /* Desativa o tooltip em telas de toque (onde não há hover ativo) */
-  .wa-tooltip {
-    display: none !important;
-  }
+.social-list .icon-content:has(a[data-social="instagram"]):hover .tooltip {
+  background: linear-gradient(45deg, #405de6, #b33ab4, #e1306c);
 }
