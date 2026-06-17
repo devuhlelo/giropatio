@@ -47,7 +47,7 @@ export default function Counter() {
       </div>
 
       <p className="counter-text">
-        GiroPátio capturando seus leads <span className="highlight">continuamente</span>
+        SisgenCar capturando seus leads <span className="highlight">continuamente</span>
       </p>
     </section>
   );

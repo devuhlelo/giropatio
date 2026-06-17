@@ -20,7 +20,7 @@ const Parallax = ({ height = "30vh" }) => {
                 </h1>
 
                 <p>
-                    O GiroPátio usa IA para capturar e responder leads 24h por dia
+                    O SisgenCar usa IA para capturar e responder leads 24h por dia
                 </p>
             </div>
         </section>

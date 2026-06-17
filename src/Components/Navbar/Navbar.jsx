@@ -40,7 +40,7 @@ export default function Navbar() {
       <div className="container navbar-inner">
 
         <a className="brand" href="/" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-          <img src={logo} alt="GiroPátio" />
+          <img src={logo} alt="SisgenCar" />
         </a>
 
         <button
