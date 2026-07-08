@@ -21,7 +21,7 @@ export default function Hero() {
           </h1>
 
           <p>
-            Chega de curiosos sugando seu tempo. A IA do SisgenCar atende 24h, 
+            Chega de curiosos sugando seu tempo. A IA do SisgenAuto atende 24h, 
             qualifica o lead no WhatsApp e entrega o cliente pronto para fechar negócio.
           </p>
 
@@ -65,7 +65,7 @@ export default function Hero() {
                 <Bot size={18} color="#0a0c10" />
               </div>
               <div className="phone-info">
-                <div className="phone-name">Assistente SisgenCar</div>
+                <div className="phone-name">Assistente SisgenAuto</div>
                 <div className="phone-status">● Online agora</div>
               </div>
             </div>

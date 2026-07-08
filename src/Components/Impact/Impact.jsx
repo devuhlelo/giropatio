@@ -16,7 +16,7 @@ export default function Impact() {
           </h2>
 
           <p className="impact-sub">
-            Sem o SisgenCar centralizando e automatizando o processo, o custo de não ter o sistema cobra seu preço todos os dias.
+            Sem o SisgenAuto centralizando e automatizando o processo, o custo de não ter o sistema cobra seu preço todos os dias.
           </p>
 
           <div className="impact-box">
@@ -64,7 +64,7 @@ export default function Impact() {
             {/* Tag img usando a variável importada */}
             <img 
               src={imagemImpacto} 
-              alt="Mockup do sistema SisgenCar e gestor analisando métricas de leads" 
+              alt="Mockup do sistema SisgenAuto e gestor analisando métricas de leads" 
               className="mockup-img"
             />
             {/* Efeito de luz decorativo atrás do mockup */}

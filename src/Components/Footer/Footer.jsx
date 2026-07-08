@@ -29,7 +29,7 @@ export default function Footer() {
         {/* BOTTOM */}
         <div className="footer-bottom">
           <div className="footer-brand">
-            <strong>SisgenCar</strong>
+            <strong>SisgenAuto</strong>
             <span>© 2026 Todos os direitos reservados</span>
           </div>
 

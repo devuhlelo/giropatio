@@ -7,7 +7,7 @@ export default function Pain() {
       <div className="pain-container">
 
         <h2>
-          O que acontece quando <span>você não usa o SisgenCar?</span>
+          O que acontece quando <span>você não usa o SisgenAuto?</span>
         </h2>
 
         <p className="pain-subtitle">

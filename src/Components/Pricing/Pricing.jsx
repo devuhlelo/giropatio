@@ -7,7 +7,7 @@ export default function Pricing() {
 
   // Função auxiliar para gerar os links personalizados do WhatsApp de forma limpa
   const generateWhatsAppLink = (planName, price) => {
-    const baseText = `Olá! Gostaria de contratar o plano *${planName}* (R$ ${price}/mês) do SisgenCar. Como posso começar?`;
+    const baseText = `Olá! Gostaria de contratar o plano *${planName}* (R$ ${price}/mês) do SisgenAuto. Como posso começar?`;
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(baseText)}`;
   };
 
