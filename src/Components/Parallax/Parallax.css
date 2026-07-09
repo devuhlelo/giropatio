@@ -1,16 +1,16 @@
 .parallax-container {
   width: 100%;
+  min-height: var(--parallax-height, 30vh);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 20px; 
 }
 
-/* 🔥 overlay MUITO melhor (gradiente ao invés de chapado) */
 .parallax-overlay {
   position: absolute;
   inset: 0;
@@ -28,12 +28,12 @@
   color: #f3f3f3;
   text-align: center;
   max-width: 800px;
-  padding: 20px;
+  width: 100%;
+  padding: 0 20px;
 }
 
-/* 🔥 TÍTULO IMPACTANTE */
 .parallax-content h1 {
-  font-size: 44px;
+  font-size: clamp(28px, 5vw, 44px);
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.5px;
@@ -44,24 +44,22 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 } 
 
-/* 🔥 SUBTÍTULO MAIS SUAVE */
+/* 🔥 SUBTÍTULO MAIS SUAVE COM TAMANHO FLUIDO */
 .parallax-content p {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   color: rgba(255,255,255,0.85);
   line-height: 1.6;
-  max-width: 600px;
+  max-width: 750px; /* 👈 Aumentamos aqui para dar espaço à frase completa */
   margin: 0 auto;
-
-  /* sombra mais elegante */
   text-shadow: 0 3px 15px rgba(0,0,0,0.85);
 }
-/* mobile fix */
+
 @media (max-width: 768px) {
   .parallax-container {
     background-attachment: scroll;
-    height: 50vh;
+    min-height: 50vh !important;
+    padding: 60px 16px;
   }
 }

@@ -1,6 +1,5 @@
 import "./Impact.css";
 import { UserMinus, ZapOff, MessageSquareX, AlertTriangle } from "lucide-react";
-// Importe a imagem da sua pasta de assets (ajuste os "../" dependendo de onde está este arquivo)
 import imagemImpacto from "../../assets/impacto.png"; 
 
 export default function Impact() {
@@ -8,7 +7,6 @@ export default function Impact() {
     <section className="impact" id="impact">
       <div className="impact-container">
         
-        {/* COLUNA DA ESQUERDA: TEXTO E DOR DO CLIENTE */}
         <div className="impact-left-side">
           <h2>
             Sua loja está perdendo leads 
@@ -52,26 +50,24 @@ export default function Impact() {
             </div>
 
           </div>
-
-          <p className="impact-warning">
-            <AlertTriangle size={16} /> O cliente de internet compra de quem responde primeiro. Você tem certeza que é você?
-          </p>
         </div>
 
-        {/* COLUNA DA DIREITA: MOCKUP + IMAGEM */}
         <div className="impact-right-side">
           <div className="mockup-wrapper">
-            {/* Tag img usando a variável importada */}
             <img 
               src={imagemImpacto} 
               alt="Mockup do sistema SisgenAuto e gestor analisando métricas de leads" 
               className="mockup-img"
             />
-            {/* Efeito de luz decorativo atrás do mockup */}
             <div className="mockup-glow"></div>
           </div>
         </div>
 
+      </div>
+
+      <div className="impact-warning">
+        <AlertTriangle size={20} /> 
+        <span>O cliente de internet compra de quem responde primeiro. Você tem certeza que é você?</span>
       </div>
     </section>
   );

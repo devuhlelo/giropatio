@@ -43,7 +43,7 @@ export default function Pricing() {
               <h4 className="cyber-plan-name">Motor de Partida</h4>
               <div className="cyber-price-wrapper">
                 <span className="cyber-currency">R$</span>
-                <span className="cyber-amount">197</span>
+                <span className="cyber-amount">197,00</span>
                 <span className="cyber-period">/mês</span>
               </div>
               <p className="cyber-plan-summary">
@@ -86,7 +86,7 @@ export default function Pricing() {
               <h4 className="cyber-plan-name">Alta Rotação</h4>
               <div className="cyber-price-wrapper">
                 <span className="cyber-currency">R$</span>
-                <span className="cyber-amount">347</span>
+                <span className="cyber-amount">347,00</span>
                 <span className="cyber-period">/mês</span>
               </div>
               <p className="cyber-plan-summary yellow-tint">
@@ -125,7 +125,7 @@ export default function Pricing() {
               <h4 className="cyber-plan-name">Máquina de Vendas</h4>
               <div className="cyber-price-wrapper">
                 <span className="cyber-currency">R$</span>
-                <span className="cyber-amount">597</span>
+                <span className="cyber-amount">597,00</span>
                 <span className="cyber-period">/mês</span>
               </div>
               <p className="cyber-plan-summary">

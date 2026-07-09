@@ -1,20 +1,24 @@
 .impact {
-  padding: 50px 20px;
+  padding: 60px 0 0 0;
   background: #07080a;
   overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
-/* CONTAINER EM DUAS COLUNAS */
 .impact-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px 60px 20px;
   display: grid;
-  grid-template-columns: 1.2fr 1fr; /* Esquerda levemente maior para os textos */
+  grid-template-columns: 1.1fr 1fr;
   gap: 60px;
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-/* COLUNA DA ESQUERDA (TEXTOS) */
 .impact-left-side {
   text-align: left;
 }
@@ -25,10 +29,11 @@
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: -0.5px;
+  margin: 0;
 }
 
 .impact h2 span {
-  color: #ff6b00; /* Laranja de impacto */
+  color: #ff6b00;
 }
 
 .impact-sub {
@@ -38,16 +43,15 @@
   line-height: 1.6;
 }
 
-/* BOX DE IMPACTOS NEGATIVOS */
 .impact-box {
   margin-top: 32px;
   background: #111319;
   border-radius: 16px;
   padding: 24px;
   border: 1px solid rgba(255, 255, 255, 0.04);
+  box-sizing: border-box;
 }
 
-/* LINHAS DE IMPACTO */
 .impact-row {
   display: flex;
   align-items: flex-start;
@@ -57,9 +61,13 @@
 
 .impact-row:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
-/* ALINHAMENTO INTERNO */
+.impact-row:first-child {
+  padding-top: 0;
+}
+
 .left {
   display: flex;
   align-items: flex-start;
@@ -67,7 +75,7 @@
 }
 
 .left svg {
-  color: #ff4D4D; /* Vermelho/Laranja suave para indicar problema/erro */
+  color: #ff4D4D;
   margin-top: 2px;
   flex-shrink: 0;
 }
@@ -90,33 +98,42 @@
   line-height: 1.4;
 }
 
-/* AVISO INFERIOR */
 .impact-warning {
-  margin-top: 24px;
-  color: #ff4D4D;
-  font-size: 14px;
+  width: 100%;
+  padding: 28px 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
-  font-weight: 500;
+  gap: 14px;
+  background: rgba(255, 77, 77, 0.15);
+  border-top: 1px solid rgba(255, 77, 77, 0.35);
+  border-bottom: 1px solid rgba(255, 77, 77, 0.35);
+  color: #fff5f2;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(255, 77, 77, 0.12);
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .impact-warning svg {
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
 }
 
-/* COLUNA DA DIREITA (MOCKUP) */
 .impact-right-side {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .mockup-wrapper {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 650px;
   z-index: 2;
 }
 
@@ -125,11 +142,10 @@
   height: auto;
   object-fit: contain;
   border-radius: 12px;
-  /* Sombra pesada para destacar o mockup do fundo preto do site */
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); 
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  display: block;
 }
 
-/* Brilho decorativo atrás da imagem */
 .mockup-glow {
   position: absolute;
   width: 300px;
@@ -142,34 +158,37 @@
   pointer-events: none;
 }
 
-/* RESPONSIVO PARA TABLETS E CELULARES */
 @media (max-width: 968px) {
   .impact {
-    padding: 60px 20px;
+    padding: 60px 0 0 0;
   }
-
+  
   .impact-container {
-    grid-template-columns: 1fr; /* Vira uma única coluna */
+    grid-template-columns: 1fr;
     gap: 40px;
+    padding: 0 20px 40px 20px;
   }
-
+  
   .impact-left-side {
     text-align: center;
   }
-
+  
   .left {
     text-align: left;
   }
-
+  
   .impact h2 {
     font-size: 32px;
   }
-
+  
   .impact-warning {
-    justify-content: center;
+    padding: 20px 16px;
+    font-size: 16px;
+    flex-direction: column;
+    text-align: center;
   }
-
+  
   .impact-right-side {
-    order: -1; /* Joga a imagem para cima do texto no mobile se preferir focar no visual primeiro */
+    order: -1;
   }
 }
