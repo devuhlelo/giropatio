@@ -18,11 +18,13 @@ export default function Pain() {
 
           {/* CARD 1 */}
           <div className="pain-card">
-            <div className="icon">
-              <MessageCircle size={26} />
-            </div>
+            <div className="pain-head">
+              <div className="icon">
+                <MessageCircle size={26} />
+              </div>
 
-            <h3>O Vendedor Exausto</h3>
+              <h3>O Vendedor Exausto</h3>
+            </div>
 
             <p>
               Sua equipe perde horas no WhatsApp respondendo "Qual o valor?" ou "Aceita troca?" para curiosos que somem no minuto seguinte.
@@ -35,11 +37,13 @@ export default function Pain() {
 
           {/* CARD 2 - DESTACADO */}
           <div className="pain-card featured">
-            <div className="icon">
-              <Clock size={26} />
-            </div>
+            <div className="pain-head">
+              <div className="icon">
+                <Clock size={26} />
+              </div>
 
-            <h3>O Cliente no Vácuo</h3>
+              <h3>O Cliente no Vácuo</h3>
+            </div>
 
             <p>
               Aquele lead quente chega de madrugada com dinheiro na mão, mas esfria e vai para o concorrente porque ninguém da agência respondeu na hora.
@@ -52,11 +56,13 @@ export default function Pain() {
 
           {/* CARD 3 */}
           <div className="pain-card">
-            <div className="icon">
-              <Car size={26} />
-            </div>
+            <div className="pain-head">
+              <div className="icon">
+                <Car size={26} />
+              </div>
 
-            <h3>O Dinheiro Parado</h3>
+              <h3>O Dinheiro Parado</h3>
+            </div>
 
             <p>
               Carros perdendo valor de tabela a cada mês no pátio, enquanto você luta para gerenciar negociações espalhadas no papel.

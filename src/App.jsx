@@ -10,14 +10,12 @@ import Impact from "./Components/Impact/Impact.jsx";
 // Importe o novo componente do botão flutuante (Ajuste o caminho da pasta se necessário)
 import FloatingWhatsApp from "./Components/FloatingWhatsApp/FloatingWhatsApp.jsx";
 import Parallax from "./Components/Parallax/Parallax.jsx";
-import Counter from "./Components/Counter/Counter.jsx";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Counter />
       <Pain />
       <Features />
       <Impact />

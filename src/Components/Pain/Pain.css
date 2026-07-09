@@ -80,13 +80,21 @@
   background: rgba(255, 107, 0, 0.12);
   color: #ff6b00;
 
-  margin-bottom: 20px;
+  margin: 0; /* spacing handled by .pain-head */
+}
+
+/* Cabeçalho do card: ícone + título alinhados */
+.pain-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
 }
 
 /* TÍTULO */
 .pain-card h3 {
   font-size: 22px;
-  margin-bottom: 12px;
+  margin: 0; /* alinhado via .pain-head */
   color: white;
   font-weight: 600;
 }

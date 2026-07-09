@@ -37,10 +37,12 @@ export default function Pricing() {
           {/* PLANO 1 */}
           <div className="pricing-cyber-card">
             <div className="cyber-card-inner">
-              <div className="plan-icon-box">
-                <Rocket size={20} className="icon-orange" />
+              <div className="cyber-head">
+                <div className="plan-icon-box">
+                  <Rocket size={20} className="icon-orange" />
+                </div>
+                <h4 className="cyber-plan-name">Motor de Partida</h4>
               </div>
-              <h4 className="cyber-plan-name">Motor de Partida</h4>
               <div className="cyber-price-wrapper">
                 <span className="cyber-currency">R$</span>
                 <span className="cyber-amount">197,00</span>
@@ -80,10 +82,12 @@ export default function Pricing() {
                 <Flame size={12} />
                 <span>O mais vendido</span>
               </div>
-              <div className="plan-icon-box internal-gradient">
-                <Zap size={20} className="icon-white" />
+              <div className="cyber-head">
+                <div className="plan-icon-box internal-gradient">
+                  <Zap size={20} className="icon-white" />
+                </div>
+                <h4 className="cyber-plan-name">Alta Rotação</h4>
               </div>
-              <h4 className="cyber-plan-name">Alta Rotação</h4>
               <div className="cyber-price-wrapper">
                 <span className="cyber-currency">R$</span>
                 <span className="cyber-amount">347,00</span>
@@ -119,10 +123,12 @@ export default function Pricing() {
           {/* PLANO 3 */}
           <div className="pricing-cyber-card">
             <div className="cyber-card-inner">
-              <div className="plan-icon-box">
-                <Shield size={20} className="icon-orange" />
+              <div className="cyber-head">
+                <div className="plan-icon-box">
+                  <Shield size={20} className="icon-orange" />
+                </div>
+                <h4 className="cyber-plan-name">Máquina de Vendas</h4>
               </div>
-              <h4 className="cyber-plan-name">Máquina de Vendas</h4>
               <div className="cyber-price-wrapper">
                 <span className="cyber-currency">R$</span>
                 <span className="cyber-amount">597,00</span>

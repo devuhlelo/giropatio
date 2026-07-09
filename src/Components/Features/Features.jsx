@@ -19,11 +19,13 @@ export default function Features() {
 
           {/* FEATURE 1 */}
           <div className="features-card">
-            <div className="icon">
-              <MessageCircle size={26} />
-            </div>
+            <div className="feature-head">
+              <div className="icon">
+                <MessageCircle size={26} />
+              </div>
 
-            <h3>Qualificação Automática (As 3 Gavetas)</h3>
+              <h3>Qualificação Automática (As 3 Gavetas)</h3>
+            </div>
 
             <p>
               A IA atende na hora e descobre: Tem carro na troca? Forma de pagamento? Valor de entrada? O lead só chega ao vendedor quando estiver pronto.
@@ -36,11 +38,13 @@ export default function Features() {
 
           {/* FEATURE 2 */}
           <div className="features-card featured">
-            <div className="icon">
-              <MonitorSmartphone size={26} />
-            </div>
+            <div className="feature-head">
+              <div className="icon">
+                <MonitorSmartphone size={26} />
+              </div>
 
-            <h3>Vitrine Digital Premium</h3>
+              <h3>Vitrine Digital Premium</h3>
+            </div>
 
             <p>
               Um catálogo web moderno para a sua agência, com fotos que convertem e precificação integrada automaticamente com a tabela FIPE.
@@ -53,11 +57,13 @@ export default function Features() {
 
           {/* FEATURE 3 */}
           <div className="features-card">
-            <div className="icon">
-              <KanbanSquare size={26} />
-            </div>
+            <div className="feature-head">
+              <div className="icon">
+                <KanbanSquare size={26} />
+              </div>
 
-            <h3>Pipeline Kanban Intuitivo</h3>
+              <h3>Pipeline Kanban Intuitivo</h3>
+            </div>
 
             <p>
               Chega de perder o fio da meada. Acompanhe cada negociação em um funil visual de vendas focado 100% em conversão e fechamento rápido.

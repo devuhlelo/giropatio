@@ -77,14 +77,22 @@
   background: rgba(255, 107, 0, 0.08);
   color: #ff6b00;
 
-  margin-bottom: 16px;
+  margin: 0; /* agora o espaçamento é controlado pelo .feature-head */
+}
+
+/* Cabeçalho do card: ícone + título alinhados */
+.feature-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
 }
 
 /* TÍTULO */
 .features-card h3 {
   font-size: 18px;
   color: white;
-  margin-bottom: 10px;
+  margin: 0; /* título alinhado com o ícone via .feature-head */
 }
 
 /* TEXTO */
