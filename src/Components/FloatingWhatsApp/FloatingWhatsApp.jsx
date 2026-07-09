@@ -4,7 +4,7 @@ import "./FloatingWhatsApp.css";
 export default function FloatingWhatsApp() {
   const [isVisible, setIsVisible] = useState(false);
 
-  const whatsappLink = "https://wa.me/5531987891486?text=Ol%C3%A1%21%20Vim%20do%20site%20GiroP%C3%A1tio%20e%20gostaria%20de%20saber%20mais%20sobre%20como%20vender%20mais%20r%C3%A1pido.";
+  const whatsappLink = "https://wa.me/5531987891486?text=Ol%C3%A1%21%20Vim%20do%20site%20SisgenAuto%20e%20gostaria%20de%20saber%20mais%20sobre%20como%20vender%20mais%20r%C3%A1pido.";
   const instagramLink = "https://www.instagram.com/giropatio?igsh=azBzemt0amJodzR0"; // Insira o seu link real aqui
 
   useEffect(() => {

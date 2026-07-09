@@ -3,7 +3,7 @@ import { MessageCircle, ArrowRight, CheckCircle, Bot, Zap } from "lucide-react";
 
 export default function Hero() {
   // Link direto do WhatsApp com mensagem pronta
-  const whatsappLink = "https://wa.me/5531987891486?text=Ol%C3%A1%2C%20quero%20vender%20mais%20r%C3%A1pido%20com%20o%20GiroP%C3%A1tio!";
+  const whatsappLink = "https://wa.me/5531987891486?text=Ol%C3%A1%2C%20quero%20vender%20mais%20r%C3%A1pido%20com%20o%20SisgenAuto!";
 
   return (
     <section className="hero">

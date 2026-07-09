@@ -7,7 +7,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   // Link direto do WhatsApp com mensagem pronta
-  const whatsappLink = "https://wa.me/5531987891486?text=Ol%C3%A1%2C%20gostaria%20de%20come%C3%A7ar%20gr%C3%A1tis%20no%20GiroP%C3%A1tio!";
+  const whatsappLink = "https://wa.me/5531987891486?text=Ol%C3%A1%2C%20gostaria%20de%20come%C3%A7ar%20gr%C3%A1tis%20no%20SisgenAuto!";
 
   useEffect(() => {
     const handleScroll = () => {

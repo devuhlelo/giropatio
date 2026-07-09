@@ -2,7 +2,7 @@ import "./Footer.css";
 import { MessageCircle, ArrowRight } from "lucide-react";
 
 export default function Footer() {
-  const whatsappLink = "https://wa.me/5531987891486?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20GiroP%C3%A1tio!";
+  const whatsappLink = "https://wa.me/5531987891486?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20SisgenAuto!";
 
   return (
     <footer className="footer">
