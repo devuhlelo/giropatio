@@ -16,8 +16,8 @@ export default function Hero() {
          
 
           <h1>
-            Transforme cliques em <br />
-            <span className="accent text-gradient-orange">vendas de veículos reais.</span>
+            Transforme cliques em 
+            <span className="accent text-gradient-orange"> vendas de veículos reais.</span>
           </h1>
 
           <p>
